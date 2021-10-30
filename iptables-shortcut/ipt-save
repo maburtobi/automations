@@ -1,0 +1,6 @@
+if [ -d "/etc/iptables" ]; then
+  iptables-save > /etc/iptables/rules.v4
+ else
+  echo 'Failed to save, Dir not exist'
+  exit 1
+fi
