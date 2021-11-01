@@ -1,0 +1,1 @@
+iptables -vL -n -t filter --line-numbers
