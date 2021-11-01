@@ -1,0 +1,1 @@
+ip6tables -vL -n -t filter --line-numbers
