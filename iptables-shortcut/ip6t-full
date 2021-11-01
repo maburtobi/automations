@@ -1,0 +1,14 @@
+echo 'FILTER'
+ip6tables -vL --line-numbers
+echo '-----------------------------------------'
+echo 'NAT'
+ip6tables -vL -t nat --line-numbers
+echo '-----------------------------------------'
+echo 'MANGLE'
+ip6tables -vL -t mangle --line-numbers
+echo '-----------------------------------------'
+echo 'RAW'
+ip6tables -vL -t raw --line-numbers
+echo '-----------------------------------------'
+echo 'SECURITY'
+ip6tables -vL -t security --line-numbers
