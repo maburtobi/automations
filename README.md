@@ -9,6 +9,5 @@ sh install-docker-debian.sh
 
 <b>Install iptables viewer (shortcut command)</b>
 <pre>
-wget https://raw.githubusercontent.com/maburtobi/automations/main/iptables-shortcut/setup-iptables-viewer.bash
-sudo bash setup-iptables-viewer.bash
+wget https://raw.githubusercontent.com/maburtobi/automations/main/iptables-shortcut/setup-iptables-viewer.bash && sudo bash setup-iptables-viewer.bash
 </pre>
