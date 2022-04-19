@@ -25,7 +25,8 @@ echo -e "ip6tables -vL -n -t filter --line-numbers"\
 echo -e "if [ -d "/etc/iptables" ]; then\n\
   ip6tables-save > /etc/iptables/rules.v6\n\
  else\n\
-  echo 'Failed to save, Dir not exist'\n\
+  mkdir /etc/iptables\n\
+  echo 'Failed to save, Dir not exist. Please try again to save the rules'\n\
   exit 1\n\
 fi"\
 | sudo tee /usr/local/sbin/ip6t-save
@@ -57,6 +58,7 @@ echo -e "\
 if [ -d "/etc/iptables" ]; then\n\
   iptables-save > /etc/iptables/rules.v4\n\
  else\n\
+  mkdir /etc/iptables\n\
   echo 'Failed to save, Dir not exist'\n\
   exit 1\n\
 fi"\
