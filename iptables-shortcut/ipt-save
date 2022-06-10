@@ -1,6 +1,11 @@
 if [ -d "/etc/iptables" ]; then
   iptables-save > /etc/iptables/rules.v4
+  echo "Rules has been save successfully"
  else
-  echo 'Failed to save, Dir not exist'
-  exit 1
+  echo "Failed to save, dir not exist."
+  echo "Creating dir to save rules"
+  mkdir /etc/iptables
+  touch /etc/iptables/rules.v4
+  iptables-save > /etc/iptables/rules.v4
+  echo "Dir created. Rules has been save successfully"
 fi
