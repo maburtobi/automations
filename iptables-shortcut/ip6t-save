@@ -1,6 +1,0 @@
-if [ -d "/etc/iptables" ]; then
-  ip6tables-save > /etc/iptables/rules.v6
- else
-  echo 'Failed to save, Dir not exist'
-  exit 1
-fi
