@@ -16,4 +16,4 @@ ip6tables -vL -t raw --line-numbers\n\
 echo '-----------------------------------------'\n\
 echo 'SECURITY'\n\
 ip6tables -vL -t security --line-numbers"\
-| sudo tee /usr/local/sbin/ip6t
+| sudo tee /usr/local/sbin/ip6t > /dev/null
