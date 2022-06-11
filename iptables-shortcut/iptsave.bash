@@ -8,4 +8,4 @@ if [ -d "/etc/iptables" ]; then\n\
   echo 'Please install iptables-persistent to solve this'\n\
   exit 1\n\
 fi"\
-| sudo tee /usr/local/sbin/iptsave
+| sudo tee /usr/local/sbin/iptsave > /dev/null
