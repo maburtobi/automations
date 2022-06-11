@@ -17,7 +17,7 @@ echo "--------------------------------------"
 echo "Installing command shortcut"
 cd
 wget https://raw.githubusercontent.com/maburtobi/automations/main/iptables-shortcut/{ip6t,ip6tnum,ip6tsave,ipt,iptnum,iptsave}.bash
-sudo bash ip6t.bash.bash
+sudo bash ip6t.bash
 sudo bash ip6tnum.bash
 sudo bash ip6tsave.bash
 sudo bash ipt.bash
