@@ -1,8 +1,0 @@
-if [ -d "/etc/iptables" ]; then
-  iptables-save > /etc/iptables/rules.v4
-  echo "Rules has been saved successfully"
- else
-  echo "Failed to save, dir not exist."
-  echo "Try to install iptables-persistent to solve this"
-  exit 1
-fi
