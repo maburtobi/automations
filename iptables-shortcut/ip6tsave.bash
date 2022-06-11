@@ -7,4 +7,4 @@ echo -e "if [ -d "/etc/iptables" ]; then\n\
   echo 'Failed to save, Dir not exist. Please try again to save the rules'\n\
   exit 1\n\
 fi"\
-| sudo tee /usr/local/sbin/ip6tsave
+| sudo tee /usr/local/sbin/ip6tsave > /dev/null
