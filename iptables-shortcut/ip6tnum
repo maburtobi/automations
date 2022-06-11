@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo -e "ip6tables -vL -n -t filter --line-numbers"\
-| sudo tee /usr/local/ip6t-num
+| sudo tee /usr/local/ip6tnum
