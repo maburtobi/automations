@@ -15,4 +15,4 @@ iptables -vL -t raw --line-numbers\n\
 echo '-----------------------------------------'\n\
 echo 'SECURITY'\n\
 iptables -vL -t security --line-numbers"\
-| sudo tee /usr/local/sbin/ipt
+| sudo tee /usr/local/sbin/ipt > /dev/null
